@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap" rel="stylesheet">
+		<script>
+			function signUp() {
+				var newUsername = document.getElementById("new-username").value;
+				var newPassword = document.getElementById("new-password").value;
+				// Here, you should typically store the newUsername and newPassword in a database or server.
+
+				alert("Sign up successful! You can now sign in with your new credentials.");
+				// Optionally, you can redirect to a sign-in page.
+			}
+
+			function signIn() {
+				var username = document.getElementById("username").value;
+				var password = document.getElementById("password").value;
+
+				// You should validate the entered username and password with the stored data in your database or server.
+				// For this example, we'll use hardcoded values.
+				if (username === "123" && password === "123") {
+					// Redirect to your desired page
+					window.location.href = "Home.html";
+				} else {
+					alert("Invalid username or password. Please enter '123' for both.");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="login-form">
+			<input type="radio" name="tab" class="tab" id="sign-up-tab" checked>
+			<label for="sign-up-tab" class="tab-header">Sign Up</label>
+			<input type="radio" name="tab" class="tab" id="sign-in-tab">
+			<label for="sign-in-tab" class="tab-header">Sign In</label>
+
+			<form id="form1">
+				<div class="header">Sign Up</div>
+				<div class="form-input">
+					<input type="text" class="input" id="new-username" placeholder="Choose a Username" required>
+				</div>
+				<div class="form-input">
+					<input type="password" class="input" id="new-password" placeholder="Choose a Password" required>
+				</div>
+				<input type="button" id="sign-up" class="submit-button" value="SIGN UP" onclick="signUp()">
+			</form>
+			<form id="form2">
+				<div class="header">Sign In</div>
+				<div class="form-input">
+					<input type="text" class="input" id="username" placeholder="Username" required>
+				</div>
+				<div class="form-input">
+					<input type="password" class="input" id="password" placeholder="Password" required>
+				</div>
+				<input type="checkbox" id="check"><span>Keep me Signed in</span>
+				<input type="button" id="sign-in" class="submit-button" value="SIGN IN" onclick="signIn()">
+			</form>
+		</div>
+	</body>
+</html>
