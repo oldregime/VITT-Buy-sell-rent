@@ -210,97 +210,119 @@
     </div>
 </div>
 <!-- Breadcrumb End -->
-<!-- Sell section -->
 <div class="container-fluid">
     <div class="row px-xl-5">
-        <div class="col-12">
-<section class="sell-section">
-    <h1>वित्त Sell</h1>
-    
-    
-    <form>
-        <label for="product-image">Upload image:</label>
-        
-        <input type="file" id="product-image" name="product-image" multiple><br>
-    
-        <label for="product-description">Description:</label>
-        <textarea id="product-description" name="product-description"></textarea><br>
-    
-        <label for="product-price">Price:</label>
-        <input type="number" id="product-price" name="product-price"><br>
-    
-        <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="newaccount">
-            <label class="custom-control-label" for="newaccount">Rent this out Instead?</label>
+        <div class="col-lg-8">
+            <h5 class="section-title position-relative text-uppercase mb-3">
+                <span class="bg-secondary pr-3"><strong>वित्त Sell</strong></span>
+            </h5>
+            <section class="sell-section">
+                <form>
+                    <label for="product-image">Upload image:</label>
+                    <input type="file" id="product-image" name="product-image" multiple><br>
+                    <label for="product-description">Name of the product:</label>
+                    <input type="text" id="product-name" name="product-name"><br> <!-- Changed ID to product-name -->
+                    <label for="product-description">Description:</label>
+                    <textarea id="product-description" name="product-description"></textarea><br>
+                    <label for="product-specification">Product Specification:</label> <!-- Changed ID to product-specification -->
+                    <textarea id="product-specification" name="product-specification"></textarea><br>
+                    <label for="product-price">Price:</label> <!-- Changed ID to product-price -->
+                    <input type="number" id="product-price" name="product-price"><br>
+                    <label for="seller-name">Sellers Name:</label> <!-- Changed ID to seller-name -->
+                    <input type="text" id="seller-name" name="seller-name"><br>
+                    <label for="product-mobile">Mobile No:</label> <!-- Changed ID to product-mobile -->
+                    <input type="number" id="product-mobile" name="product-mobile"><br>
+                    <label for="product-email">E-mail:</label> <!-- Changed ID to product-email -->
+                    <input type="text" id="product-email" name="product-email"><br> <!-- Changed type to "text" -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="newaccount">
+                        <label class="custom-control-label" for="newaccount">Rent this out Instead?</label>
+                    </div>
+                    <input type="button" value="Preview" id="preview-button">
+                </form>
+            </section>
         </div>
-    
-        <input type="submit" value="Submit">
-    </form>
-    </div>
-</div>
+        
+        <div class="col-lg-4">
+            <h5 class="section-title position-relative text-uppercase mb-3">
+                <span class="bg-secondary pr-3">Preview</span>
+            </h5>
+            <div class="bg-light p-30 mb-5">
+                <!-- Rest of your existing content for "Order Total" goes here -->
+                <div class="bg-light p-30">
+                    <img id="preview-image" src="#" alt="Preview Image" style="display: none; width: 250px; height: 250px;">
+                </div>
+                <div class="preview-info" style="margin-top: 20px;">
+                    <ul class="list-unstyled">
+                        <li><strong>Name:</strong> <span id="preview-name"></span></li>
+                        <li><strong>Price:</strong> <span id="preview-price"></span></li>
+                        <li><strong>Mobile Number:</strong> <span id="preview-mobile"></span></li>
+                        <li><strong>Email Address:</strong> <span id="preview-email"></span></li>
 
-</div>
+                    </ul>
+                    <button type="submit">Submit</button> <!-- New submit button -->
 
-
-
-
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
-        <div class="row px-xl-5 pt-5">
-            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>VIT-Bhopal</p>
-                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>Divyansh8065@gmail.com</p>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
-                            <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4">Make Money With Us</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sell on वित्त</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>वित्त Global Selling</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Become an Affiliate</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Fulfilment by वित्त</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>वित्त Pay on Merchants</a>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Your Email Address">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary">Sign Up</button>
-                                </div>
-                            </div>
-                        </form>
-                        
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <div class="col-md-6 px-xl-0">
-               
-            </div>
-            <div class="col-md-6 px-xl-0 text-center text-md-right">
-                
+    </div>
+</div>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-secondary mt-5 pt-5">
+    <div class="row px-xl-5 pt-5">
+        <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+            <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>VIT-Bhopal</p>
+            <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>Divyansh8065@gmail.com</p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                        <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-secondary text-uppercase mb-4">Make Money With Us</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sell on वित्त</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>वित्त Global Selling</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Become an Affiliate</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Fulfilment by वित्त</a>
+                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>वित्त Pay on Merchants</a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Your Email Address">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+    <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="col-md-6 px-xl-0">
+           
+        </div>
+        <div class="col-md-6 px-xl-0 text-center text-md-right">
+            
+        </div>
+    </div>
+</div>
+
+<!-- Footer End -->
 
 
     <!-- Back to Top -->
@@ -318,7 +340,8 @@
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/detail.js"></script>
+    <script src="js/preview.js"></script>
+
 </body>
 
 </html>
