@@ -1,3 +1,4 @@
+
 // Get the form elements
 const productName = document.getElementById("product-name");
 const productSpecification = document.getElementById("product-specification");
@@ -32,4 +33,21 @@ previewButton.addEventListener("click", function() {
     }
     reader.readAsDataURL(productImage.files[0]);
   }
+  
+  // Get submit button 
+const submitBtn = document.querySelector('button[type="submit"]');
+
+// Get popup
+const thanksPopup = document.querySelector('#thanksPopup');
+
+// Show popup when submit clicked
+submitBtn.addEventListener('click', () => {
+  thanksPopup.classList.add('active');
+});
+const closePopupBtn = document.querySelector('#closePopupBtn');
+
+closePopupBtn.addEventListener('click', () => {
+  thanksPopup.classList.remove('active'); 
+});
+  
 });
