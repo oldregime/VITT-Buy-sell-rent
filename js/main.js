@@ -69,4 +69,9 @@
             }
         }
     });
+function scrollToProducts() {
+  document.getElementById("listed-products").scrollIntoView({ behavior: 'smooth' });
+}
+
+
 })(jQuery);
