@@ -1,5 +1,6 @@
-Vitt - Finance in Hindi
-Introduction
+Vitt - Finance in Hindi  
+
+
 Hey, I'm Divyansh Joshi, and this is Vitt, my first web development project. Created during my engineering course, it may seem modest, but it marks the beginning of my coding journey.
 
 About Vitt
